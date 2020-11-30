@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.lotte.android_notepad"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.3.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible,GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    //noinspection GradleCompatible
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.13.1'
+
+    //ImagePicker
+    implementation 'com.lzy.widget:imagepicker:0.3.2'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+}

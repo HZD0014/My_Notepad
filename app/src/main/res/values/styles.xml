@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+<!--    <style name="DialogBottomStyle" parent="android:Animation">-->
+<!--        //进入时的动画-->
+<!--        <item name="@android:windowEnterAnimation">@anim/push_top_in</item>-->
+<!--        //退出时的动画-->
+<!--        <item name="@android:windowExitAnimation">@anim/push_top_out</item>-->
+<!--    </style>-->
+
+    <style name="add_new_note_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#009688</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+</resources>
